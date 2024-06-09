@@ -29,6 +29,7 @@ public class ShelterService {
             }
         } catch (IOException e) {
             System.err.println(Messages.fileErr.get());
+            System.exit(1);
             return null;
         }
     }
