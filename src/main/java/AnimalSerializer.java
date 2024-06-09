@@ -12,20 +12,14 @@ public class AnimalSerializer {
         this.mapper = new JsonMapper();
     }
 
-    public void serialize(Animal animal, File file) throws IOException {
-        this.mapper.writeValue(file, animal);
-    }
 
     public void serializeList(List<Animal> animals, File file) throws IOException {
         this.mapper.writeValue(file, animals);
     }
 
-    public Animal deserialize(File file) throws IOException {
-        return this.mapper.readValue(file, Animal.class);
-    }
 
     public List<Animal> deserializeList(File file) throws IOException {
-        return this.mapper.readValue(file, new TypeReference<List<Animal>>() {
+        return this.mapper.readValue(file, new TypeReference<>() {
         });
     }
 }

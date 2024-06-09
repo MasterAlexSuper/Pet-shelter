@@ -13,7 +13,4 @@ public class Animal {
     private int age;
     private String type;
 
-    Animal(String name) {
-        this.name = name;
-    }
 }

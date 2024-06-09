@@ -14,7 +14,7 @@ public enum Messages {
     bye("До зустрічі!");
 
 
-    private String msg;
+    private final String msg;
 
     Messages(String msg) {
         this.msg = msg;
